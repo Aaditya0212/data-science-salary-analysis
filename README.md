@@ -1,74 +1,59 @@
-# 📊 Data Science Salary Analysis (2023)
+# Data Science Salary Analysis
 
-**An analytical exploration of global data science salaries by role, experience, and geography, built using R. This project provides actionable insights for career decisions and salary expectations in the data science field.**
+This project analyzes salary trends in the data science field across roles, experience levels, company types, and geographic locations. The goal is to uncover key insights that can guide professionals, recruiters, and organizations in understanding compensation dynamics within the data science industry.
 
----
+## Project Objective
 
-## 🧠 Project Overview
+The primary objective of this analysis is to explore how factors such as experience level, job title, company size, employment type, and work location impact data science salaries. By visualizing and interpreting these relationships, we aim to identify trends and potential gaps that can support career decisions and business planning.
 
-In this project, we analyze and visualize data science salary data from 2023 to uncover trends in compensation based on:
+## Dataset
 
-- **Experience Level**
-- **Job Title**
-- **Region/Location**
-- **Company Size**
-- **Remote Work Ratio**
+- **Source**: [Kaggle – Data Science Salaries](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
+- **Records**: 3,000+ salary entries from 2020–2023
+- **Features**:
+  - Job Title
+  - Experience Level
+  - Employment Type
+  - Company Size
+  - Remote Ratio
+  - Salary (in USD)
+  - Country
+  - Work Year
 
-The dataset provides an overview of salaries across various positions within the data science field, offering valuable insights for both aspiring professionals and hiring managers.
+## Tools and Technologies
 
----
+- Python (Pandas, NumPy)
+- Matplotlib and Seaborn (for visualization)
+- Jupyter Notebook
+- Git & GitHub
 
-## 📁 Dataset Overview
+## Project Workflow
 
-- **Source**: Custom dataset containing real-world data science salary information
-- **Total Entries**: 375+ records
-- **Key Features**:
-  - `work_year`: Year of the data entry (2023)
-  - `experience_level`: Role experience (e.g., EN, MI, SE, EX)
-  - `job_title`: Specific job title (e.g., Data Scientist, ML Engineer)
-  - `salary_in_usd`: Salary in USD for standardized comparison
-  - `company_size`: Small (S), Medium (M), Large (L)
-  - `remote_ratio`: Percentage of remote work allowed by company
-  - `employee_residence`: Country of employee’s residence
-  - `company_location`: Location of the company
+### 1. Data Cleaning and Preprocessing
+- Removed missing or duplicate entries
+- Standardized categorical variables
+- Converted currencies to a common format (USD)
 
----
+### 2. Exploratory Data Analysis (EDA)
+- Salary distribution by experience level, company size, and role
+- Geographic variation in salaries across countries
+- Trends in remote work adoption and its impact on pay
 
-## 🔍 Key Insights
+### 3. Key Visualizations
+- Box plots for salary ranges across roles and company types
+- Bar graphs highlighting top-paying job titles
+- Heatmaps showing correlation between features
+- Time series plots for salary changes by year
 
-- **Top Earners**: Senior roles (`SE`) and executive roles (`EX`) command the highest salaries, with **Principal Data Scientists** and **Machine Learning Engineers** at the top.
-- **Regional Insights**: **North America** (US, CA) offers the highest salaries, while emerging markets show a strong upward trend in compensation.
-- **Remote Work**: Companies offering remote opportunities tend to offer higher salaries, reflecting the increased demand for flexible work arrangements.
-- **Company Size**: Large companies (L) typically provide the highest salaries, while smaller companies (S) offer more modest compensation packages.
+## Key Insights
 
----
+- **Experience Level**: Executive-level roles significantly outpace junior and mid-level positions in salary.
+- **Company Size**: Larger companies tend to offer higher compensation, especially for remote roles.
+- **Geography**: Salaries vary widely by country, with U.S.-based roles offering the highest averages.
+- **Job Title**: Data Architects and Machine Learning Engineers lead in median salary.
 
-## 📈 Data Visualizations
-
-This project includes several visualizations that break down:
-- Salary distributions by **experience level**
-- Salary comparison across **job titles**
-- Salary variance by **region**
-- **Company size** and its correlation with salary data
-
-The insights drawn from these visualizations can be used by both job seekers to align their expectations and recruiters to benchmark salaries in their region.
-
----
-
-## 🛠️ Tech Stack
-
-- **Programming Language**: R
-- **Tools**: RStudio
-- **Libraries**: 
-  - `ggplot2` for data visualization
-  - `dplyr`, `tidyverse` for data wrangling
-  - `readr` for data input and output
-
----
-
-## 🚀 How to Run
+## How to Use This Repository
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/Aaditya0212/data-science-salary-analysis.git
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/data-science-salary-analysis.git
